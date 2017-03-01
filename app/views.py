@@ -7,15 +7,15 @@ from .forms import LoginForm
 def index():
     user = {'nickname':'Gustavo'} # fake user
     posts = [ # fake array of posts
-                {
-                    'author': {'nickname': 'John'},
-                    'body': 'Beautiful day in Rio.'
-                },
-                {
-                    'author': {'nickname': 'Susan'},
-                    'body': 'What a lovely lunch!'
-                }
-            ]
+        {
+            'author': {'nickname': 'John'},
+            'body': 'Beautiful day in Rio.'
+        },
+        {
+            'author': {'nickname': 'Susan'},
+            'body': 'What a lovely lunch!'
+        }
+        ]
     return render_template('index.html',
                            title='Home',
                            user=user,
